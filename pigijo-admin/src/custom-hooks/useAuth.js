@@ -84,12 +84,12 @@ const useAuth = () => {
 
         // console.log(response.data);
 
-        if (!response.data) {
-          // Jika user belum login, simpan path saat ini di local storage
-          localStorage.setItem("redirectPath", window.location.pathname);
-          // Arahkan ke halaman login
-          navigate("/login");
-        }
+        // if (!response.data) {
+        //   // Jika user belum login, simpan path saat ini di local storage
+        //   localStorage.setItem("redirectPath", window.location.pathname);
+        //   // Arahkan ke halaman login
+        //   navigate("/login");
+        // }
       } catch (error) {
         console.error("Error fetching current user:", error);
         setCurrentUser(null);

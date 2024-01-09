@@ -4,7 +4,7 @@ import { Routes, Route, Navigate, useRoutes } from "react-router-dom";
 import Admin from "../pages/Admin/admin";
 import Article from "../pages/Article/article";
 import Document from "../pages/Document/document";
-import Login from "../pages/Login/Login";
+import Login from "../pages/Login/login";
 import ProtectedRoute from "./ProtectedRoute";
 import useAuth from "../custom-hooks/useAuth";
 
