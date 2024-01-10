@@ -10,7 +10,13 @@ const ArticleModel = require("./models/Article");
 const DocumentModel = require("./models/Document");
 require("dotenv").config();
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://vercel-admin-server.vercel.app"],
+    methods: ["POST, GET, DELETE"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 const upload = multer();
 const port = process.env.DB_PORT;
